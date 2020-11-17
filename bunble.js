@@ -1,42 +1,24 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var arr = [1, 3, 4, 5, 10]; // Funções para trabalhar com arrays/vetores no ES6
+// Função map() percorre o vetor e retorna uma informação igual ou nova
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+var newArr = arr.map(function (item, index) {
+  return (item + index) * 2;
+});
+console.log(newArr); // Função reduce() consome todo o vetor e retorna uma única informação
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log(sum); // Função filter() filtra o conteudo do array
 
-var Matematica = /*#__PURE__*/function () {
-  function Matematica() {
-    _classCallCheck(this, Matematica);
-  }
+var filter = arr.filter(function (item) {
+  return item % 2 === 0;
+});
+console.log(filter); // Função find() verifica se exite determinada informção no array
 
-  _createClass(Matematica, null, [{
-    key: "soma",
-    value: function soma(a, b) {
-      return a + b;
-    }
-  }]);
-
-  return Matematica;
-}(); // Const: Variaveis que não podem ter o valor reatribuido
-
-
-var a = 1; // Mutação de variavel tipo Obj através da key word const
-
-var usuario = {
-  name: "Heloisy"
-};
-usuario.name = "Wylkerd";
-console.log(usuario); // Variaveis de escopo usam a Key word "let"
-
-function teste(x) {
-  var y = 2;
-
-  if (x > 5) {
-    var _y = 4;
-    console.log(x, _y);
-  }
-}
-
-teste(10);
+var find = arr.find(function (item) {
+  return item === 4;
+});
+console.log(find);

@@ -1,26 +1,34 @@
-class Matematica {
-    static soma(a, b) {
-        return a + b;
-    }
-}
+const arr = [1, 3, 4, 5, 10];
 
-// Const: Variaveis que não podem ter o valor reatribuido
-const a = 1;
+// Funções para trabalhar com arrays/vetores no ES6
+// Função map() percorre o vetor e retorna uma informação igual ou nova
+const newArr = arr.map(function(item, index)
+{
+    return (item + index) * 2;
+}) 
 
-// Mutação de variavel tipo Obj através da key word const
-const usuario = {name: "Heloisy"};
+console.log(newArr);
 
-usuario.name = "Wylkerd";
+// Função reduce() consome todo o vetor e retorna uma única informação
 
-console.log(usuario);
+const sum = arr.reduce(function(total, next)
+{
+    return total + next;   
+});
 
-// Variaveis de escopo usam a Key word "let"
-function teste(x){
-    let y = 2;
+console.log(sum);
 
-    if (x > 5){
-        let y = 4;
-        console.log(x, y);
-    }
-}
-teste(10);
+// Função filter() filtra o conteudo do array
+
+const filter = arr.filter(function(item){
+    return item % 2 === 0;
+});
+
+console.log(filter);
+
+// Função find() verifica se exite determinada informção no array
+const find = arr.find(function(item){
+    return item === 4;
+});
+
+console.log(find);
