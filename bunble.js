@@ -19,6 +19,24 @@ var Matematica = /*#__PURE__*/function () {
   }]);
 
   return Matematica;
-}();
+}(); // Const: Variaveis que não podem ter o valor reatribuido
 
-console.log(Matematica.soma(1, 2));
+
+var a = 1; // Mutação de variavel tipo Obj através da key word const
+
+var usuario = {
+  name: "Heloisy"
+};
+usuario.name = "Wylkerd";
+console.log(usuario); // Variaveis de escopo usam a Key word "let"
+
+function teste(x) {
+  var y = 2;
+
+  if (x > 5) {
+    var _y = 4;
+    console.log(x, _y);
+  }
+}
+
+teste(10);
