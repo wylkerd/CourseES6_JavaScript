@@ -20,6 +20,8 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
   }
   
 - yarn add @babel/core
+
+### Execute code with command:
 - yarn dev
 
 
