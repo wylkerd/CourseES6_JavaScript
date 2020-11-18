@@ -25,7 +25,9 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 ### Execute code with command:
 - yarn dev
 
-### YARN WEBPACK
+#### YARN WEBPACK
 - yarn add webpack webpack-cli -D
+##### Babel loader
+- yarn add babel-loader
 
 
