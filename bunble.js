@@ -1,30 +1,21 @@
 "use strict";
 
-var arr = [1, 3, 4, 5, 10]; //function(item) é uma função anônima, melhor lugar para se usar errow function =>
-// quando a função recebe apenas um parâmetro pode-se remove-los (item) para item =>
-// quando só tem um retorno, o mesmo pode ficar desta seguinte forma
+function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
+} //atribui o valor a posição "a"
 
-var newArr = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr); //retorno de string
 
-var testefunc = function testefunc() {
-  return 'teste função';
-};
+console.log(soma(1));
+console.log(soma());
 
-console.log(testefunc()); //retorno de função
+var somaArrow = function somaArrow() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
+}; //atribui o valor a posição "a"
 
-var testefunc2 = function testefunc2() {
-  return [1, 2, 3];
-};
 
-console.log(testefunc2()); //retorno de objeto
-
-var testefunc3 = function testefunc3() {
-  return {
-    nome: "Wylkerd"
-  };
-};
-
-console.log(testefunc3());
+console.log(soma(1));
+console.log(soma());
