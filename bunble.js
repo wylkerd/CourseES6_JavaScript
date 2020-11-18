@@ -1,21 +1,27 @@
 "use strict";
 
-function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a + b;
-} //atribui o valor a posição "a"
+var usuario = {
+  nome: 'wylkerd',
+  idade: 20,
+  endereço: {
+    cidade: 'Santos',
+    estado: 'SP'
+  }
+};
+console.log(usuario); // Desestruturação de objeto
 
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereço.cidade;
+console.log(nome, idade, cidade);
+console.log(nome);
+console.log(idade);
+console.log(cidade);
 
-console.log(soma(1));
-console.log(soma());
+function mostraNome(_ref) {
+  var nome = _ref.nome,
+      estado = _ref.endereço.estado;
+  console.log(nome, estado);
+}
 
-var somaArrow = function somaArrow() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a + b;
-}; //atribui o valor a posição "a"
-
-
-console.log(soma(1));
-console.log(soma());
+mostraNome(usuario);
