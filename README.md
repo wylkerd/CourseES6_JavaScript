@@ -29,5 +29,7 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 - yarn add webpack webpack-cli -D
 ##### Babel loader
 - yarn add babel-loader -D  OR  yarn add babel-loader@8.0.0-beta.0 -D
+##### Webpack Dev server
+- yarn add webpack-dev-server -D
 
 
