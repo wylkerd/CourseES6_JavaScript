@@ -8,6 +8,7 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 - yarn init
 - yarn add @babel/cli
 - yarn add @babel/preset-env
+- yarn add @babel/plugin-syntax-object-rest-spread
 
 #### To create a arq ".babelrc" and add code:
 {
