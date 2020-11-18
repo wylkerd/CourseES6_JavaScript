@@ -25,4 +25,7 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 ### Execute code with command:
 - yarn dev
 
+### YARN WEBPACK
+- yarn add webpack webpack-cli
+
 
