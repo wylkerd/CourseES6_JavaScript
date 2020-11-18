@@ -34,6 +34,6 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 - yarn add webpack-dev-server -D
 
 #### Async/Await
-- yarn add @babel/plugin-transform-async-to-generator@7.0.0-beta.40 -D
-- yarn add @babel/polyfill@7.0.0-beta.40 -D
+- yarn add @babel/plugin-transform-async-to-generator -D
+- yarn add @babel/polyfill -D
 
