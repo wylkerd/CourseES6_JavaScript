@@ -26,6 +26,6 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 - yarn dev
 
 ### YARN WEBPACK
-- yarn add webpack webpack-cli
+- yarn add webpack webpack-cli -D
 
 
