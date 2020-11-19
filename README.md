@@ -32,6 +32,8 @@ Course about ECMAScript 6+.  Object-oriented programming(first commit), node, ya
 - yarn add babel-loader -D  OR  yarn add babel-loader@8.0.0-beta.0 -D
 ##### Webpack Dev server
 - yarn add webpack-dev-server -D
+##### AXIOS
+- yarn add axios
 
 #### Async/Await
 - yarn add @babel/plugin-transform-async-to-generator -D
